@@ -1,0 +1,16 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "paths": {
+      "App/*": ["app/*"],
+      "Config/*": ["config/*"],
+      "Database/*": ["database/*"],
+      "Contracts/*": ["contracts/*"],
+      "Providers/*": ["providers/*"],
+      "#controllers/*": ["./app/Controllers/*"]
+    }
+  }
+}
